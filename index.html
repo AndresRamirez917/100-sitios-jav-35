@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="/mobile.css">
+    <link rel="stylesheet" href="/alertify.core.css">
+    <link rel="stylesheet" href="/alertify.default.css">
+   <script src="/alertify.min.js"></script>
     <title>LANDB | Welcome</title>
 </head>
 <body>
@@ -27,8 +30,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim.</p>
                 <div class="showcase-input">
                     <div class="input-group">
-                        <input type="text" placeholder="Enter your email">
-                        <button class="btn button-1">schedule now</button>
+                        <input id="showcase-email" type="text" placeholder="">
+                        <button id="btn-enviar" class="btn button-1">schedule now</button>
                     </div>
                 </div>
             </div>
@@ -39,16 +42,8 @@
         <div class="container">
             <h2>features</h2>
             <div class="features-row">
-                <img class="img-1" src="/img/feature-1.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta in sit condimentum sed eget lorem senectus. Enim pharetra facilisi neque massa mauris amet enim ornare. Quis ultricies eu sit risus. Leo, sed morbi nibh sed. Dui nisi, rutrum arcu lorem eu amet senectus quisque nunc. At nulla dolor convallis arcu lorem tempus consectetur a. Massa egestas viverra ut mi amet massa. Consectetur nisl scelerisque sit quis. Amet, lorem eu mauris scelerisque nisl platea. Gravida sit massa posuere amet nam blandit sit egestas. Sem tincidunt donec lacinia leo nunc, sed phasellus erat. Sagittis consequat ac ligula in gravida est vestibulum.
-
-                    Vestibulum ultrices commodo placerat urna fringilla. Iaculis orci, imperdiet adipiscing orci. Aliquam ante curabitur sit tortor mattis sit commodo porttitor. In sit faucibus amet congue. Nec aenean mi placerat integer sit.</p>
-            </div>
-            <div class="features-row">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta in sit condimentum sed eget lorem senectus. Enim pharetra facilisi neque massa mauris amet enim ornare. Quis ultricies eu sit risus. Leo, sed morbi nibh sed. Dui nisi, rutrum arcu lorem eu amet senectus quisque nunc. At nulla dolor convallis arcu lorem tempus consectetur a. Massa egestas viverra ut mi amet massa. Consectetur nisl scelerisque sit quis. Amet, lorem eu mauris scelerisque nisl platea. Gravida sit massa posuere amet nam blandit sit egestas. Sem tincidunt donec lacinia leo nunc, sed phasellus erat. Sagittis consequat ac ligula in gravida est vestibulum.
-
-                    Vestibulum ultrices commodo placerat urna fringilla. Iaculis orci, imperdiet adipiscing orci. Aliquam ante curabitur sit tortor mattis sit commodo porttitor. In sit faucibus amet congue. Nec aenean mi placerat integer sit.</p>
-                    <img class="img-2" src="/img/feature-2.jpg" alt="">
+     
+                
             </div>
         </div>
     </section>
@@ -85,17 +80,17 @@
             <form action="">
                 <div class="form-group">
                     <label for="">Nombre</label>
-                    <input type="text" class="form-control">
+                    <input id="nombre" type="text" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">Email</label>
-                    <input type="text" class="form-control">
+                    <input id="email" type="text" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="mensaje" cols="30" rows="10" class="form-control"></textarea>
                 </div>
-                <button class="btn button-2">send</button>
+                <button id="btn-validar" class="btn button-2">send</button>
             </form>
         </div>
     </section>
@@ -104,5 +99,6 @@
     <footer id="footer">
         <a href="https://twitter.com/AndresRamirez?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @AndresRamirez</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

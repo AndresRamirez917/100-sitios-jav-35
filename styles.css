@@ -151,13 +151,15 @@ form button {
 
 #showcase .input-group input {
     padding: 10px;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.509);
+    border-radius: 5px;
 }
 
 /* features */
 #features p {
     letter-spacing: 3px;
     line-height: 30px;
+    text-align: justify;
 }
 
 #features img {
@@ -166,6 +168,11 @@ form button {
 
 #features .img-1 {
     border-top-right-radius: 100px;
+    width:50%;
+    height: 50vh;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 #features .img-2 {
@@ -176,6 +183,10 @@ form button {
     display: flex;
     margin-bottom: 4em;
     gap: 4em;
+}
+
+.features-row .card-1 {
+    width: 50%;
 }
 
 /* banner */
