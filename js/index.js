@@ -85,6 +85,37 @@ const emailValido = (showcase_email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(showcase_email.value)
 }
 
+const btn_validar = document.getElementById('btn-validar').onclick = (e) => {
+e.preventDefault()
+const nombre = document.getElementById('nombre');
+const email = document.getElementById('email');
+const mensaje = document.getElementById('mensaje');
+const arr = [];
+const arrMessages = ["Nombre", "Email", "Mensaje"];
+arr.push(nombre, email, mensaje);
+for(i = 0; i < arr.length; i++){
+    if(arr[i].value == ""){
+        alertify.error( `El campo ${arrMessages[i]} no puede estar vacío`);
+        return false;
+    }
+}
+
+
+if(!emailValid(email)){
+    alertify.error( `El campo ${arrMessages[1]} no tiene el formato correcto` );
+        return false;
+}
+
+alertify.success("Datos enviados satisfactoriamte");
+nombre.value = "";
+email.value = "";
+mensaje.value = "";
+return true;
+}
+const emailValid = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)
+}
+
 btn_enviar.addEventListener("click", validaEmail)
 getData()
 getData2()

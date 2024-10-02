@@ -26,16 +26,29 @@
 }
 
 /* features */
+#features .card-1{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
 #features .features-row {
     display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.features-row p {
+    margin-bottom: 1rem;
+}
+
+.card-1 img {
+    display: block;
+    margin: 0 auto;
+   
 }
 
 #features img {
     width: 100%;
-}
-
-#features .img-2 {
-    margin-top: 1em;
 }
 
 /* banner */
